@@ -158,7 +158,7 @@ swarm.blCnt : INFO : Starting SWARM-API-SERVER on port: 30304
 --ml-v workspace/mnist/results:/results \
 --ml-e DATA_DIR=/app-data \
 --ml-e SCRATCH_DIR=/tmp/scratch \
---ml-e RESULT_FILE=exp_weak_dp_adam_sl1.json \
+--ml-e RESULT_FILE=exp_dp1_adam_sl1.json \
 --ml-e MIN_PEERS=2 \
 --ml-e MAX_EPOCHS=8 \
 --ml-e NODE_ID=0 \
@@ -172,7 +172,7 @@ swarm.blCnt : INFO : Starting SWARM-API-SERVER on port: 30304
 
 ```bash
 docker logs -f ml1 > \
-~/swarm-learning/workspace/mnist/results/exp_weak_dp_adam_ml1.log 2>&1 &
+~/swarm-learning/workspace/mnist/results/exp_dp1_adam_ml1.log 2>&1 &
 ```
 
 ---
@@ -198,7 +198,7 @@ docker logs -f ml1 > \
 --ml-v workspace/mnist/results:/results \
 --ml-e DATA_DIR=/app-data \
 --ml-e SCRATCH_DIR=/tmp/scratch \
---ml-e RESULT_FILE=exp_weak_dp_adam_sl2.json \
+--ml-e RESULT_FILE=exp_dp1_adam_sl2.json \
 --ml-e MIN_PEERS=2 \
 --ml-e MAX_EPOCHS=8 \
 --ml-e NODE_ID=1 \
@@ -212,7 +212,7 @@ docker logs -f ml1 > \
 
 ```bash
 docker logs -f ml2 > \
-~/swarm-learning/workspace/mnist/results/exp_weak_dp_adam_ml2.log 2>&1 &
+~/swarm-learning/workspace/mnist/results/exp_dp1_adam_ml2.log 2>&1 &
 ```
 
 ---
