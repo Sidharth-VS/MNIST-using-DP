@@ -136,15 +136,6 @@ Wait until:
 swarm.blCnt : INFO : Starting SWARM-API-SERVER on port: 30304
 ```
 
-# Between Experiments
-
-Stop old containers before every new experiment:
-
-```bash
-docker rm -f sn1 sl1 sl2 ml1 ml2 2>/dev/null
-```
-
----
 
 ## Run SL1
 
@@ -222,6 +213,16 @@ docker logs -f ml1 > \
 ```bash
 docker logs -f ml2 > \
 ~/swarm-learning/workspace/mnist/results/exp_weak_dp_adam_ml2.log 2>&1 &
+```
+
+---
+
+# Between Experiments
+
+Stop old containers before every new experiment:
+
+```bash
+docker rm -f sn1 sl1 sl2 ml1 ml2 2>/dev/null
 ```
 
 ---
