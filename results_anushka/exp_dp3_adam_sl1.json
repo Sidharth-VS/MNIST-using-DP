@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dp_enabled": true,
+    "noise_multiplier": 3.0,
+    "l2_norm_clip": 1.0,
+    "microbatches": 32,
+    "optimizer": "adam",
+    "learning_rate": "default",
+    "epochs": 8,
+    "node_index": 0,
+    "min_peers": 2
+  },
+  "privacy": {
+    "epsilon": 0.1153,
+    "delta": 3.3333333333333335e-05
+  },
+  "results": {
+    "loss": 0.5763,
+    "accuracy": 0.8198,
+    "f1_score": 0.8172
+  },
+  "timing": {
+    "training_time_seconds": 743.75,
+    "training_time_minutes": 12.4
+  }
+}
